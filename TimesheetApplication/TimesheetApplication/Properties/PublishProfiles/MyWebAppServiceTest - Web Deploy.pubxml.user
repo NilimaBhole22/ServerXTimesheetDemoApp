@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAc7aSJEcqzUylDRw2PBCI8gAAAAACAAAAAAADZgAAwAAAABAAAACG/CpSFwzGjZlQoYNqwUXOAAAAAASAAACgAAAAEAAAABy17NWsZC9PN7OMXudah+qAAAAA9QczyWdBUDbNWq3a4AaITjQQrF2eKcWCNXX+K/QgiDNEDCRbDTRL+ybvOjgB+i5qUDhZzANTHDpLK/X9QQMDCZRQpJ5x3dAwmjPyuOsMdbvkkoiZwXPFNfMwpuMVSXWLNS19MxkU6JnxJiMQwgxroOEPVH7go8SIHyvMTu3jYW8UAAAAo7h1ZbwgE8uJJRTrWzTgAbIdi5o=</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DevConnection">
+      <Value>Server=tcp:nilimasqlserver.database.windows.net,1433%3bInitial Catalog=MySqlDatabase%3bPersist Security Info=False%3bUser ID=nilima%3bPassword=Nb%40#%242020%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="TimesheetApplication.Models.RegistrationDetailContext">
+      <Value>Server=tcp:nilimasqlserver.database.windows.net,1433%3bInitial Catalog=MySqlDatabase%3bPersist Security Info=False%3bUser ID=nilima%3bPassword=Nb%40#%242020%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

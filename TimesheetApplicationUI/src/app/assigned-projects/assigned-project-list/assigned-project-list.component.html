@@ -1,0 +1,21 @@
+<p>Project List</p>
+
+<table class="table table-hover">
+  <tr>
+    <td>User</td>
+    <td>Project</td>
+    <td>
+      <i class="far fa-trash-alt fa-lg text-danger"></i>
+    </td>
+
+    <hr>
+  </tr>
+  <tr *ngFor="let data of assignedProjectData">
+    <td (click)="populateForm(data)">{{data.user}}</td>
+    <td (click)="populateForm(data)">{{data.project}}</td>
+    
+    <td>
+      <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(data.id)"></i>
+    </td>
+  </tr>
+</table>

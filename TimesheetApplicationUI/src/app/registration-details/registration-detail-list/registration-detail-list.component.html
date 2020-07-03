@@ -1,0 +1,23 @@
+<p>User List</p>
+
+<table class="table table-hover">
+  <tr>
+    <td>UserName</td>
+    <td>Password</td>
+    <td>Employee Id</td>
+    <td>
+      <i class="far fa-trash-alt fa-lg text-danger"></i>
+    </td>
+
+    <hr>
+  </tr>
+  <tr *ngFor="let data of registrationData">
+    <td (click)="populateForm(data)">{{data.username}}</td>
+    <td (click)="populateForm(data)">{{data.password}}</td>
+    <td (click)="populateForm(data)">{{data.userId}}</td>
+    <td>
+      <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(data.id)"></i>
+      
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,25 @@
+<p></p>
+
+<table class="table table-hover">
+  <tr>
+    <td>User</td>
+    <td>Project</td>
+    <td>Record Date</td>
+    <td>Hour</td>
+    <td>Comment</td>
+    
+    <td>
+      <i class="far fa-trash-alt fa-lg text-danger"></i>
+    </td>
+  </tr>
+  <tr *ngFor="let data of timesheetData">
+    <td (click)="populateForm(data)">{{data.user}}</td>
+    <td (click)="populateForm(data)">{{data.projectName}}</td>
+    <td (click)="populateForm(data)">{{data.recordDate}}</td>
+    <td (click)="populateForm(data)">{{data.hour}}</td>
+    <td (click)="populateForm(data)">{{data.comment}}</td>
+    <td>
+      <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(data.id)"></i>
+    </td>
+  </tr>
+</table>

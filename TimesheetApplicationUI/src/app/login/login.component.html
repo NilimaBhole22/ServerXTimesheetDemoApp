@@ -1,0 +1,57 @@
+<p>
+  login works!
+</p>
+<br/><br/>
+<div class="jumbtron">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a style="cursor: pointer;" class="navbar-brand">Login</a>
+        </div>
+    </div>
+  </nav>
+  <div class="row">
+
+    <div class="col-md-3">
+      
+    </div>
+
+    <div class="col-md-7">
+      
+      <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+        <input type="hidden" name="id" [value]="service.formData.id">
+        
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text bg-white">
+                <i class="fas fa-user-circle" [class.green-icon]="username.valid" [class.red-icon]="username.invalid && username.touched"></i>
+              </div>
+            </div>
+            <input name="username" #username="ngModel" [(ngModel)]="service.formData.username" class="form-control"
+              placeholder="User Name" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text bg-white">
+                <i class="fas fa-key"  [class.green-icon]="password.valid" [class.red-icon]="password.invalid && password.touched"></i>
+              </div>
+            </div>
+            <input type="password" name="password" #password="ngModel" [(ngModel)]="service.formData.password" 
+            class="form-control" placeholder="Password" required >
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <button class="btn btn-success btn-lg btn-block" type="submit" [disabled]="form.invalid"><i class="fas fa-database"></i> Login</button>
+        </div>
+      </form>
+
+    </div>
+    <div class="col-md-3">
+      
+    </div>
+  </div>
+</div>

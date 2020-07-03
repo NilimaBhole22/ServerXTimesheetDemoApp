@@ -1,0 +1,21 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+      <div class="navbar-header">
+          <a style="cursor: pointer;" class="navbar-brand">Timesheet</a>
+      </div>
+      <div class="navbar-nav mr-auto" >
+          <ul class="nav navbar-nav">
+              <li routerLinkActive="active"><a routerLink="/registration">register</a></li>
+              <li routerLinkActive="active"><a routerLink="/userdetails">User</a></li>
+              <li routerLinkActive="active"><a routerLink="/timesheet-list">timesheet</a></li>
+              <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
+              <li routerLinkActive="active"><a routerLink="/project">Project</a></li>
+              <li routerLinkActive="active"><a routerLink="/assigned-project">Assigned Project</a></li>
+              <li routerLinkActive="active"><a routerLink="/timelog-details">Time Log</a></li>
+          </ul>
+          
+          <router-outlet></router-outlet>
+      </div>
+  </div>
+</nav> 
+

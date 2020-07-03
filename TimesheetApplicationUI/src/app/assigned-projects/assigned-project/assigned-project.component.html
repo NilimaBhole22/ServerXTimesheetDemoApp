@@ -1,0 +1,20 @@
+<!-- <div ng-if="service.formData.user == isAllowed"> -->
+ <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+  <input type="hidden" name="id" [value]="service.formData.id">
+
+  <div class="form-group">
+    <select id="id" class="form-control" name="user" #user="ngModel" [(ngModel)]="service.formData.user"  placeholder="User" required>
+      <option *ngFor="let data of registerData" [ngValue]="data.username"> {{data.username}} </option> 
+    </select>
+  </div>
+
+  <div class="form-group">
+    <select id="id" class="form-control" name="project" #project="ngModel" [(ngModel)]="service.formData.project"  placeholder="ProjectName" required>
+      <option *ngFor="let project of projectData" [ngValue]="project.project"> {{project.project}} </option> 
+    </select>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-success btn-lg btn-block" type="submit" [disabled]="form.invalid"><i class="fas fa-database"></i> Submit</button>
+  </div>
+</form>
+<!-- </div> -->

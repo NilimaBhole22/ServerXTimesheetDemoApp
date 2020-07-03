@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimesheetApplication", "TimesheetApplication\TimesheetApplication.csproj", "{802A6020-F6F5-49BC-B5B5-B670819ABC4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{802A6020-F6F5-49BC-B5B5-B670819ABC4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{802A6020-F6F5-49BC-B5B5-B670819ABC4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{802A6020-F6F5-49BC-B5B5-B670819ABC4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{802A6020-F6F5-49BC-B5B5-B670819ABC4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01E212B8-0DD7-412D-AB96-223850F2CC4B}
+	EndGlobalSection
+EndGlobal
